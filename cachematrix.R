@@ -3,6 +3,12 @@
 
 ## Write a short comment describing this function
 
+## The makeCacheMatrix function is storing the cache information. 
+## In the first run this function will not come into play because there is no cache
+## In the second run, the function will reutn the message and cached data
+
+
+
 makeCacheMatrix <- function(x = matrix()) {
                 invrs <- NULL
                 set <- function(y) {
@@ -18,6 +24,10 @@ makeCacheMatrix <- function(x = matrix()) {
 
 
 ## Write a short comment describing this function
+
+## This function is computing the inverse and 
+## if the inverse is already created, then it runs the makeCacheMatrix function
+## Hence returning the cached data
 
 cacheSolve <- function(x, ...) {
     
